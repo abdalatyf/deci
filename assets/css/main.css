@@ -1,0 +1,266 @@
+:root {
+  --main-color: #232436;
+  --orange-color: #ffd050;
+  --blue-color: #8768c1;
+}
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+ul {
+  list-style: none;
+}
+body {
+  font-family: "Poppins", sans-serif;
+}
+
+nav {
+  background-color: var(--main-color);
+  padding: 15px 0 10px;
+}
+nav .container {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+nav .title {
+  color: white;
+  font-weight: 600;
+  font-size: 18px;
+}
+nav .links {
+  display: flex;
+}
+nav .links a {
+  text-decoration: none;
+  color: white;
+  font-size: 15px;
+  padding: 5px 15px;
+  transition: 0.3s;
+}
+nav .links a:hover {
+  color: var(--main-color);
+  background-color: white;
+}
+
+.landing {
+  background-image: url("../imgs/mm.png");
+  background-repeat: no-repeat;
+  background-size: cover;
+  height: calc(100vb - 52px);
+  position: relative;
+}
+.landing::before {
+  content: "";
+  display: block;
+  width: 100%;
+  height: 100%;
+  position: absolute;
+  top: 0;
+  left: 0;
+  background-color: #000;
+  opacity: 0.6;
+  z-index: -1;
+}
+.landing .container {
+  z-index: 2;
+  color: white;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  height: 100%;
+}
+.landing .container h4 {
+  text-transform: uppercase;
+  font-weight: 300;
+  letter-spacing: 2px;
+  margin-bottom: 20px;
+}
+.landing .container h1 {
+  font-size: 40px;
+  max-width: 60%;
+  margin-bottom: 20px;
+}
+.landing .container .info {
+  font-size: 12px;
+  margin-bottom: 15px;
+}
+.landing .container .info .name {
+  color: var(--orange-color);
+}
+.landing .container p {
+  max-width: 50%;
+  font-size: 12px;
+  margin-bottom: 30px;
+}
+.landing .container a {
+  display: block;
+  padding: 10px 25px;
+  background-color: var(--orange-color);
+  color: var(--main-color);
+  text-decoration: none;
+  width: fit-content;
+  font-weight: bold;
+  transition: 0.3s;
+}
+.landing .container a:hover {
+  background-color: var(--main-color);
+  color: white;
+}
+.posts {
+  padding: 35px 0;
+}
+.posts .container {
+  display: flex;
+  gap: 10px;
+}
+.posts .featured {
+  min-width: 50%;
+}
+.posts h2 {
+  color: var(--main-color);
+  margin-bottom: 20px;
+}
+.posts .featured .box {
+  padding: 20px;
+  border: 2px solid#fafafa;
+}
+.posts .featured img {
+  width: 100%;
+}
+.posts .featured .info {
+  font-size: 12px;
+  margin-bottom: 15px;
+}
+.posts .featured .info .name {
+  color: var(--blue-color);
+}
+.posts .featured p {
+  margin: 10px 0 20px;
+  font-size: 12px;
+  color: rgb(93, 93, 93);
+}
+.posts .featured a {
+  display: block;
+  padding: 10px 25px;
+  background-color: var(--orange-color);
+  color: var(--main-color);
+  text-decoration: none;
+  width: fit-content;
+  font-weight: bold;
+  transition: 0.3s;
+}
+.posts .featured a:hover {
+  background-color: var(--main-color);
+  color: white;
+}
+.posts .all-posts {
+  width: auto;
+  position: relative;
+}
+.posts .all-posts .view-all {
+  position: absolute;
+  top: 3px;
+  right: 10px;
+  text-decoration: none;
+}
+.posts .all-posts .info {
+  font-size: 12px;
+  margin-bottom: 15px;
+}
+.posts .all-posts .info .name {
+  color: var(--blue-color);
+}
+.posts .all-posts .post {
+  padding: 20px;
+}
+.posts .all-posts .post a {
+  text-decoration: none;
+  color: var(--main-color);
+  font-weight: bold;
+  font-size: 18px;
+}
+
+.about-us {
+  padding: 35px 0;
+}
+.about-us .container {
+  position: relative;
+  background-color: #f4eff8;
+  display: flex;
+  justify-content: space-between;
+  align-items: flex-start;
+  gap: 50px;
+  padding: 70px;
+}
+.about-us .container::before {
+  content: "";
+  position: absolute;
+  right: 0;
+  height: 15px;
+  width: 18%;
+  top: -15px;
+  background-color: var(--blue-color);
+}
+.about-us .container::after {
+  content: "";
+  position: absolute;
+  right: 18%;
+  height: 15px;
+  width: 64%;
+  top: -15px;
+  background-color: var(--orange-color);
+}
+.about-us .container > div {
+  width: 50%;
+}
+.about-us .container > div h3 {
+  text-transform: uppercase;
+  font-weight: 500;
+  letter-spacing: 2px;
+  margin-bottom: 20px;
+}
+.about-us .container > .about .title {
+  font-weight: bold;
+  font-size: 30px;
+  margin-bottom: 20px;
+}
+.about-us .container > .mision .title {
+  font-weight: bold;
+  font-size: 24px;
+  max-width: 400px;
+  margin-bottom: 20px;
+}
+.about-us p {
+  font-size: 15px;
+  color: var(--main-color);
+  margin-bottom: 20px;
+}
+.about-us .about a {
+  text-decoration: none;
+  font-weight: bold;
+  color: var(--blue-color);
+}
+.container {
+  padding: 0 15px;
+  margin: 0 auto;
+}
+
+@media (min-width: 768px) {
+  .container {
+    width: 750px;
+  }
+}
+/* Medium */
+@media (min-width: 992px) {
+  .container {
+    width: 970px;
+  }
+}
+/* Large */
+@media (min-width: 1200px) {
+  .container {
+    width: 1170px;
+  }
+}
